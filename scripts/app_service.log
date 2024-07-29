@@ -1,0 +1,26 @@
+/var/log/kern
+Stores Kernel logs and warning data. This log is valuable for troubleshooting custom kernels as well.
+
+/var/log/dmesg
+Messages relating to device drivers. The command dmesg can be used to view messages in this file.
+
+/var/log/cron
+Stores all Crond-related messages (cron jobs), such as when the cron daemon initiated a job, related failure messages, etc.
+
+/var/log/yum.log
+If you install packages using the yum command, this log stores all related information, which can be useful in determining whether a package and all components were correctly installed.
+
+/var/log/faillog
+Contains information all failed login attempts, which is useful for gaining insights on attempted security breaches, such as those attempting to hack login credentials as well as brute-force attacks.
+
+/var/log/syslog or /var/log/messages
+General messages, as well as system-related information. Essentially, this log stores all activity data across the global system. Note that activity for Redhat-based systems, such as CentOS or Rhel, are stored in messages, while Ubuntu and other Debian-based systems are stored in Syslog.
+
+/var/log/auth.log or /var/log/secure
+Stores authentication logs, including both successful and failed logins and authentication methods. Again, the system type dictates where authentication logs are stored; Debian/Ubuntu information is stored in /var/log/auth.log, while Redhat/CentrOS is stored in /var/log/secure.
+
+/var/log/boot.log
+A repository of all information related to booting and any messages logged during startup.
+
+/var/log/maillog or var/log/mail.log
+Stores all logs related to mail servers, useful when you need information about postfix, smtpd, or any email-related services running on your server.
